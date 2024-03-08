@@ -1,0 +1,10 @@
+cmake_minimum_required(VERSION 3.24.3)
+project(contructorcopy LANGUAGES CXX)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+add_library(contructorcopy_lib shallow.cpp deep.cpp)
+add_executable(contructorcopy main.cpp)
+
+target_link_libraries(contructorcopy contructorcopy_lib)
