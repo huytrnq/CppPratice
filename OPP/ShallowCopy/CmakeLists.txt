@@ -1,0 +1,10 @@
+cmake_minimum_required(VERSION 3.24.3)
+project(shalowcopy LANGUAGES CXX)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+add_library(shalowcopy_lib shallow.cpp)
+add_executable(shalowcopy main.cpp)
+
+target_link_libraries(shalowcopy shalowcopy_lib)
