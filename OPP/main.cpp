@@ -2,25 +2,12 @@
 #include <vector>
 
 #include "Account.h"
+#include "player.h"
 
 using namespace std;
 
-class Player{
-    private:
-        //attributes
-        string name;
-        int health;
-        int xp;
 
-    public:
-        //method
-        void talk(string text_to_say){
-            cout << name << " says " << text_to_say << endl;
-            }
-        bool is_dead(); 
-};
-
-
+\
 int main(){
     Account frank_account;
     frank_account.set_name("Frank's account");
@@ -40,6 +27,17 @@ int main(){
     }else{
         cout << "Not sufficient funds" << endl;
     }
+
+    Player frank;
+    frank.set_name("Frank");
+    Player hero("Hero");
+    hero.set_name("Hero");
+    Player villain("Villain", 100, 12);
+    villain.set_name("Villain");
+
+    Player *enemy = new Player;
+    enemy->set_name("Enemy");
+    delete enemy;
 
     return 0;
 }
