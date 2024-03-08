@@ -1,4 +1,0 @@
-/Users/huytrq/Workspace/Dev/C++/Modern C++/OPP/build/CMakeFiles/account.dir
-/Users/huytrq/Workspace/Dev/C++/Modern C++/OPP/build/CMakeFiles/opp.dir
-/Users/huytrq/Workspace/Dev/C++/Modern C++/OPP/build/CMakeFiles/edit_cache.dir
-/Users/huytrq/Workspace/Dev/C++/Modern C++/OPP/build/CMakeFiles/rebuild_cache.dir
