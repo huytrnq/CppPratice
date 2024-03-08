@@ -21,18 +21,12 @@ class Player{
         void set_xp(int x);
 
         //overloaded constructors
-        // No args constructor
-        Player():Player("None", 0, 0){};
-        // One arg constructor
-        Player(std::string name) : Player(name, 0, 0){};
-        // Three args constructor
-        Player(std::string name_val, int health_val, int xp_val)
-            : name{name_val}, health{health_val}, xp{xp_val}{
-        };
+        Player();
+        Player(std::string name);
+        Player(std::string name_val, int health_val, int xp_val);
         // Destructor
-        ~Player(){
-            std::cout << "Destructor called for " << name << std::endl;
-        }
+        ~Player();
+
 };
 
 #endif
