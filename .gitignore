@@ -1,0 +1,30 @@
+# C++ build artifacts
+build/
+bin/
+lib/
+**/build/
+*/build/
+
+# CMake build directory
+CMakeFiles/
+CMakeCache.txt
+CMakeScripts/
+Testing/
+
+# Compiled object files
+*.o
+*.obj
+
+# Executables
+*.exe
+*.out
+
+# IDE-specific files
+.vscode/
+.idea/
+*.sln
+*.vcxproj
+*.xcodeproj
+
+# Dependency directories
+vendor/
