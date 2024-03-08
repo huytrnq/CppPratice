@@ -23,6 +23,8 @@ class Player{
         //overloaded constructors
         // Default constructor
         Player(std::string name_val = "None", int health_val = 0, int xp_val = 0);
+        // Copy constructor
+        Player(const Player &source);
         // Destructor
         ~Player();
 

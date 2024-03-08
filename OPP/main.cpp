@@ -6,8 +6,12 @@
 
 using namespace std;
 
+void display_player(Player p){
+    cout << "Name: " << p.get_name() << endl;
+    cout << "Health: " << p.get_health() << endl;
+    cout << "XP: " << p.get_xp() << endl;
+}
 
-\
 int main(){
     Account frank_account;
     frank_account.set_name("Frank's account");
@@ -29,6 +33,7 @@ int main(){
     }
 
     Player frank;
+    display_player(frank);
     frank.set_name("Frank");
     Player hero("Hero");
     hero.set_name("Hero");
