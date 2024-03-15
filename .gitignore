@@ -20,7 +20,7 @@ Testing/
 *.out
 
 # IDE-specific files
-.vscode/
+# .vscode/
 .idea/
 *.sln
 *.vcxproj

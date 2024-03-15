@@ -4,22 +4,22 @@
 1. [Object Oriented Programming](#obb)
 
 ## Object Oriented Programming
-### Outside class definition
-- Purpose: To define the member functions outside the class definition when the class is defined in a header file.
-- Syntax:
-    ```cpp
-    class ClassName
-    {
-        public:
-            void FunctionName();
-    };
-    void ClassName::FunctionName()
-    {
-        // Function definition
-    }
-    ```
 - Include guard: To prevent the header file from being included more than once in the same file.
-
+- Constructor overloading: A class can have more than one constructor.
+- Copy constructor: A constructor that creates an object by copying variables from another object.
+- Destructor: A special member function that is called when the object goes out of scope or is deleted.
+- Constructor initializer list: A list of initializations for member objects.
+- Copy constructor: 
+    + A constructor that creates an object by copying variables from another object.
+    + If a class does not have a copy constructor, the compiler will create one.
+    + If a class has a pointer to memory, the default copy constructor will copy the pointer, not the memory.
+- Shwallow copy vs Deep copy:
+    + Shallow copy: Only the pointer is copied, not the memory.
+    + Deep copy: The memory is copied.
+- Move Constructor: A constructor that moves the memory from one object to another.
+    + The copy constructor is called when the object is passed by value.
+    + The move constructor is called when the object is passed by rvalue reference.
+    + The move constructor helps to avoid unnecessary copying of memory.
 
 # Static vs Dynamic Libraries
 - Static libraries are linked to the executable at compile time.
