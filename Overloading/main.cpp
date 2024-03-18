@@ -12,5 +12,7 @@ int main(){
 
     s2 += " World";
     std::cout << s2 << std::endl;
+    std::cin >> s2;
+    std::cout << s2 << std::endl;
     return 0;
 }

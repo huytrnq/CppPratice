@@ -78,3 +78,11 @@ std::ostream &operator<<(std::ostream &os, const customString &rhs){
     os << rhs.str;
     return os;
 }
+
+std::istream &operator>>(std::istream &in, customString &rhs){
+    char *buff = new char[1000];
+    in >> buff;
+    rhs = customString(buff);
+    delete[] buff;
+    return in;
+}

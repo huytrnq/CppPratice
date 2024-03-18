@@ -13,6 +13,7 @@ public:
     bool operator==(const customString &rhs) const; // comparison operator overloading
     void operator+=(const customString &rhs); // concatenation operator overloading
     friend std::ostream &operator<<(std::ostream &os, const customString &rhs); // print operator overloading
+    friend std::istream &operator>>(std::istream &in, customString &rhs); // input operator overloading
     ~customString();
 };
 
