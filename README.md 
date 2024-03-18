@@ -2,6 +2,7 @@
 
 # Table of Contents
 1. [Object Oriented Programming](#obb)
+2. [Overloading](#overloading)
 
 ## Object Oriented Programming
 - Include guard: To prevent the header file from being included more than once in the same file.
@@ -20,6 +21,24 @@
     + The copy constructor is called when the object is passed by value.
     + The move constructor is called when the object is passed by rvalue reference.
     + The move constructor helps to avoid unnecessary copying of memory.
+- Const Class
+    + A const class can only call const member functions which have the const keyword at the end of the function declaration.
+    + A const member function cannot modify the object.
+    + A const member function can only call other const member functions.
+- Static Class Members: class-wise variables that are shared among all objects of the class.
+    + Static functions can only access static members.
+    + Define static members outside the class in the source file.
+- Struct vs Class
+    + The only difference between a struct and a class is that members of a struct are public by default, while members of a class are private
+- Friend Class: A class that can access the private members of another class.
+
+
+## Overloading
+- Constructor overloading:
+    + Copy constructor: A constructor that creates an object by copying variables from another object.
+    + If a class does not have a copy constructor, the compiler will create one with shallow copy.
+    + If your class has a raw pointer, you should define a copy constructor to perform a deep copy.
+    + Syntax: Type &Type::operator=(const Type &rhs) { ... }
 
 # Static vs Dynamic Libraries
 - Static libraries are linked to the executable at compile time.

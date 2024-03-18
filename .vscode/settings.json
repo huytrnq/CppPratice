@@ -45,5 +45,8 @@
         "vector": "cpp",
         "algorithm": "cpp"
     },
-    "cmake.sourceDirectory": "/Users/huytrq/Workspace/Dev/C++/CppPratice/OPP/Contructor"
+    "cmake.sourceDirectory": [
+        "${workspaceFolder}/Overloading"
+    ],
+    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools"
 }
