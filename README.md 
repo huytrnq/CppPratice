@@ -3,6 +3,8 @@
 # Table of Contents
 1. [Object Oriented Programming](#obb)
 2. [Overloading](#overloading)
+3. [Inheritance](#inheritance)
+
 
 ## Object Oriented Programming
 - Include guard: To prevent the header file from being included more than once in the same file.
@@ -39,6 +41,30 @@
     + If a class does not have a copy constructor, the compiler will create one with shallow copy.
     + If your class has a raw pointer, you should define a copy constructor to perform a deep copy.
     + Syntax: Type &Type::operator=(const Type &rhs) { ... }
+
+
+## Inheritance
+- Inheritance: A class can inherit from another class.
+- Generalization vs Specialization
+    + Generalization: A class that is more general than another class.
+    + Specialization: A class that is more specific than another class.
+    + A ==> B ==> C ==> D 
+
+      <================== Generalization
+
+      ==================> Specialization
+- Inheritance vs Composition
+    + Inheritance: A class inherits from another class.
+    + Composition: A class has a member object of another class.
+- Protected and Private Inheritance
+    + Protected Inheritance: The public and protected members of the base class become protected members of the derived class.
+    + Private Inheritance: The public and protected members of the base class become private members of the derived class.
+
+# Cmake
+- Cmake Inheritance
+    + PUBLIC: All the directories following PUBLIC will be used for the current target and the other targets that have dependencies on the current target, i.e., appending the directories to INCLUDE_DIRECTORIES and INTERFACE_INCLUDE_DIRECTORIES.
+    + PRIVATE: All the directories following PRIVATE will be used for the current target only, i.e., appending the directories to INCLUDE_DIRECTORIES.
+    + INTERFACE: All the directories following INTERFACE will be used for the other targets that have dependencies on the current target, i.e., appending the directories to INTERFACE_INCLUDE_DIRECTORIES.
 
 # Static vs Dynamic Libraries
 - Static libraries are linked to the executable at compile time.
