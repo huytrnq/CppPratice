@@ -8,6 +8,4 @@ void Father::display(){
 
 Mother::Mother(std::string color): skin_color(color) {}
 
-// Mother::Mother(std::string last_name, std::string color): Father(last_name), skin_color(color) {}
-
 Child::Child(std::string last_name, std::string color) : Father(last_name), Mother(color) {}
