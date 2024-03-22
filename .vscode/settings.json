@@ -46,7 +46,8 @@
         "algorithm": "cpp"
     },
     "cmake.sourceDirectory": [
-        "${workspaceFolder}/Overloading"
+        "${workspaceFolder}/Overloading",
+        "${workspaceFolder}/Inheritance"
     ],
     "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools"
 }

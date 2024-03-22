@@ -10,4 +10,4 @@ add_subdirectory(src)
 
 ## Add an executable
 add_executable(overloading main.cpp)
-target_link_libraries(overloading customString)
+target_link_libraries(overloading PRIVATE customString)

@@ -61,10 +61,14 @@
     + Private Inheritance: The public and protected members of the base class become private members of the derived class.
 
 # Cmake
-- Cmake Inheritance
+- Include Inheritance
     + PUBLIC: All the directories following PUBLIC will be used for the current target and the other targets that have dependencies on the current target, i.e., appending the directories to INCLUDE_DIRECTORIES and INTERFACE_INCLUDE_DIRECTORIES.
     + PRIVATE: All the directories following PRIVATE will be used for the current target only, i.e., appending the directories to INCLUDE_DIRECTORIES.
     + INTERFACE: All the directories following INTERFACE will be used for the other targets that have dependencies on the current target, i.e., appending the directories to INTERFACE_INCLUDE_DIRECTORIES.
+- Link Inheritance
+    + PUBLIC: All the objects following PUBLIC will be used for linking to the current target and providing the interface to the other targets that have dependencies on the current target.
+    + PRIVATE: All the objects following PRIVATE will be used for linking to the current target only.
+    + INTERFACE: All the objects following INTERFACE will be used for providing the interface to the other targets that have dependencies on the current target.
 
 # Static vs Dynamic Libraries
 - Static libraries are linked to the executable at compile time.
